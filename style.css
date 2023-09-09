@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 450px;
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid #000;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Instastory{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    padding: 9px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    
+}
+.Instastory::-webkit-scrollbar{
+    display: none;
+} 
+.story{
+    border: 3px solid rgb(161, 43, 43);
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
